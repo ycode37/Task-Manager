@@ -57,7 +57,7 @@ const LandingPage = () => {
       },
     },
   };
-
+const { navigate, user, logout } = useContext(Appcontext);
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-hidden relative font-sans">
       {/* Background Glows */}
