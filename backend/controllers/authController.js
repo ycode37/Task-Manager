@@ -242,7 +242,7 @@ export const login = async (req, res) => {
     }
     const user = await User.findOne({ email });
     if (!user) {
-      return res.json({ success: false, message: "Register Kar Pahele" });
+      return res.json({ success: false, message: "Register First Please.." });
     }
     //bcrypt compare tabhi kaam karega jab hamne pehle se already paasswor dko hash kiya hoga
     if (!user.password) {
