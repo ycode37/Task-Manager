@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 
-const allowedOriginals = "http://localhost:5173";
+const allowedOriginals = "https://task-manager-sigma-sage.vercel.app";
 
 app.use(cors({ origin: allowedOriginals, credentials: true }));
 app.use(express.json({ limit: '10mb' }));
