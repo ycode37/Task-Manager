@@ -99,7 +99,7 @@ const LandingPage = () => {
           {/* Call to Action Button */}
           <motion.div variants={itemVariants} className="mt-10">
             <button className="bg-gradient-to-r from-emerald-500 to-sky-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-emerald-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out">
-              <a href="/login">
+              <a href="https://task-manager-sigma-sage.vercel.app/login">
               Get Started for Free
               </a>
             </button>
