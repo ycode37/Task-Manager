@@ -117,7 +117,7 @@ const AdvancedTodo = () => {
       </div>
       
       <h1 className="text-4xl font-bold text-center text-white mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-        Your Personal Todo List
+        Your Personal Task Manager
       </h1>
       
       {/* Stats */}
