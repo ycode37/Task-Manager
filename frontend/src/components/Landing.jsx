@@ -3,6 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FiCheckCircle, FiStar, FiTrendingUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { useState } from "react";
+import { Appcontext } from "../context/Appcontext";
 
 // Animated Checkmark Component for the background
 const AnimatedCheckmark = ({ x, y, size, delay }) => (
@@ -98,10 +101,13 @@ const LandingPage = () => {
 
           {/* Call to Action Button */}
           <motion.div variants={itemVariants} className="mt-10">
-            <button className="bg-gradient-to-r from-emerald-500 to-sky-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-emerald-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out">
-              <a href="https://task-manager-sigma-sage.vercel.app/login">
+            <button onClick={() => {
+              
+              navigate("/login");
+            }} className="bg-gradient-to-r from-emerald-500 to-sky-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-emerald-500/50 transform hover:scale-105 transition-all duration-300 ease-in-out">
+              
               Get Started for Free
-              </a>
+              
             </button>
           </motion.div>
         </motion.div>
